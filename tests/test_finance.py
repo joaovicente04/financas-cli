@@ -7,14 +7,15 @@ from src.finance import add_expense, total_expenses
 
 
 def test_add_expense():
-    expense = add_expense("lanche", 10)
-    assert expense["description"] == "lanche"
-    assert expense["amount"] == 10
+    result = add_expense("lanche", 10)
+    assert result["description"] == "lanche"
+    assert result["amount"] == 10
 
 
 def test_total_expenses():
-    expenses = [
-        {"description": "a", "amount": 10},
-        {"description": "b", "amount": 20}
-    ]
-    assert total_expenses(expenses) == 30
+    expenses = []
+    expenses.append(add_expense("a", 10))
+    expenses.append(add_expense("b", 20))
+
+    total = total_expenses(expenses)
+    assert total == 30
