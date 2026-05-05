@@ -1,3 +1,12 @@
+## 🌐 Execução da Aplicação
+
+Esta é uma aplicação CLI (linha de comando).
+
+Para executar:
+
+```bash
+python src/main.py
+
 # 💰 Finanças CLI
 
 ## 📌 Problema
