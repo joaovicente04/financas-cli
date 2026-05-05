@@ -1,6 +1,7 @@
 from finance import add_expense, total_expenses
 from storage import load, save
-
+def convert_to_dollar(valor, cotacao):
+    return valor / cotacao
 def main():
     expenses = load()
 
