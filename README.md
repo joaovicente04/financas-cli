@@ -1,34 +1,37 @@
 ## 🌐 Execução da Aplicação
-
-Esta é uma aplicação CLI (linha de comando).
-
-Para executar:
-
-```bash
-python src/main.py
-
 # 💰 Finanças CLI
 
 ## 📌 Problema
-Muitas pessoas têm dificuldade em controlar seus gastos diários, o que pode levar a desorganização financeira.
+Muitas pessoas têm dificuldade em controlar seus gastos diários, o que pode levar à desorganização financeira e dificuldades no planejamento.
 
 ## 💡 Solução
-Esta aplicação CLI permite registrar, listar e calcular gastos de forma simples e rápida.
+Esta aplicação CLI (linha de comando) foi desenvolvida para ajudar no controle simples de despesas. O usuário pode registrar gastos, visualizar registros e acompanhar o total gasto.
 
 ## 👥 Público-alvo
-Pessoas que desejam controlar gastos de forma simples no dia a dia.
+Pessoas que desejam organizar suas finanças pessoais de forma simples e rápida.
+
+---
 
 ## ⚙️ Funcionalidades
+
 - Adicionar gasto
 - Listar gastos
 - Ver total gasto
+- Ver cotação do dólar (integração com API)
 
-## 🛠️ Tecnologias
-- Python
-- Pytest
-- Ruff
-- GitHub Actions
+---
 
-## ▶️ Como executar
+## 🌐 Execução da Aplicação
+
+Esta é uma aplicação de linha de comando (CLI).
+
+### ▶️ Executar o sistema:
+
 ```bash
 python src/main.py
+
+API utilizada:
+https://economia.awesomeapi.com.br/json/last/USD-BRL
+
+Nova funcionalidade:
+- Ver cotação do dólar diretamente no sistema
